@@ -1,0 +1,12 @@
+* {
+  :focus {
+    outline: 0;
+  }
+}
+
+#editor {
+  overflow-y: visible;
+  padding: 0.4rem;
+  border: none;
+  min-height: 30vh;
+}

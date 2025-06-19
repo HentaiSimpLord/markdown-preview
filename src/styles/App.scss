@@ -1,0 +1,35 @@
+// Variables
+$main-color: #5a827e;
+$second-color: #84ae92;
+$third-color: #b9d4aa;
+$fourth-color: #faffca;
+
+// ----------------------------------------------
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  background-color: $main-color;
+}
+
+.container {
+  border: 1px solid black;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+
+  background-color: $second-color;
+
+  margin-bottom: 1rem;
+}
+
+.toolbar {
+  padding: 0.4rem;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  background-color: $third-color;
+}
