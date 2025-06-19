@@ -12,7 +12,10 @@ const Preview = () => {
   return (
     <div id="preview" className="container">
       <toolbar className="toolbar">Previewer</toolbar>
-      <div dangerouslySetInnerHTML={{ __html: marked(inputText) }}></div>
+      <div
+        dangerouslySetInnerHTML={{ __html: marked(inputText) }}
+        className="markdown-container"
+      ></div>
       {/* <div>{inputText}</div> */}
     </div>
   );
