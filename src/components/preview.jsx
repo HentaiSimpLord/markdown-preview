@@ -1,19 +1,16 @@
 import React from "react";
-import { marked } from "marked";
 import { useSelector } from "react-redux";
 import "../styles/preview.scss";
+import { marked } from "marked";
 
 const Preview = () => {
-  const inputText = useSelector((state) => state.input.value);
-  const test = marked("#this is an h1");
-
-  // const markedInputText = marked(inputText);
+  const inputText = useSelector((state) => marked(state.input.value));
 
   return (
     <div id="preview" className="container">
       <toolbar className="toolbar">Previewer</toolbar>
       <div
-        dangerouslySetInnerHTML={{ __html: marked(inputText) }}
+        dangerouslySetInnerHTML={{ __html: inputText }}
         className="markdown-container"
       ></div>
       {/* <div>{inputText}</div> */}
